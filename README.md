@@ -1,8 +1,8 @@
-# Jedi Council
+# The Council / Jedi Council
+
+Main Scrum Wars application written in Ruby on Rails.
 
 ![Jedi Council](https://vignette2.wikia.nocookie.net/starwars/images/4/44/Councilrots.jpg/revision/latest?cb=20090915231817)
-
-Main Scrum Wars application written in Ruby.
 
 # Requirements
 
