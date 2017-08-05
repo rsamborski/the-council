@@ -39,3 +39,4 @@ Application will be available under: `http://localhost:8000`
 # Shout-outs
 
 * [Dockerizing Ruby on Rails](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
+* [Make bundler fast again in Docker](http://bradgessler.com/articles/docker-bundler/)

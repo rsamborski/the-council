@@ -2,7 +2,7 @@ postgres:
   image: postgres:9.4.5
   environment:
     POSTGRES_USER: the-council
-    POSTGRES_PASSWORD: 37KyPFFDpcduunC24t
+    POSTGRES_PASSWORD: change-to-your-password
   ports:
     - '5432:5432'
   volumes:
@@ -22,6 +22,7 @@ the-council:
     - redis
   volumes:
     - .:/the-council
+    - ./bundle:/bundle
   ports:
     - '8000:8000'
   env_file:
@@ -35,5 +36,6 @@ sidekiq:
     - redis
   volumes:
     - .:/the-council
+    - ./bundle:/bundle
   env_file:
     - .the-council.env
