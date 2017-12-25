@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  use_doorkeeper
   # Main page - placeholder
-  root 'welcome#index'
-  get '/secret', to: 'welcome#secret'
+  root 'pages#index'
+  get '/secret', to: 'pages#secret'
+  get '/api/docs', to: 'pages#apidocs'
 
   # API with Grape
   mount API::Root => '/'
 
   # User management with Devise
   devise_for :users
+
+  # oAuth2 with Doorkeepr
+  use_doorkeeper
 end

@@ -59,6 +59,7 @@ gem 'grape'
 gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-entity'
+gem 'swagger-ui_rails'
 
 # oAuth2 provider
 gem 'doorkeeper'
