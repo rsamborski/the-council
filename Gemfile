@@ -52,6 +52,10 @@ gem 'pg', '~> 0.18.3'
 gem 'sidekiq', '~> 4.0.1'
 gem 'redis-rails', '~> 5.0.0'
 gem 'devise'
-gem 'grape'
-gem 'grape-entity', '0.6.0'
 gem 'hashie-forbidden_attributes'
+
+# Grape API related gem's
+gem 'grape'
+gem 'grape-entity'
+gem 'grape-swagger'
+gem 'grape-swagger-entity'

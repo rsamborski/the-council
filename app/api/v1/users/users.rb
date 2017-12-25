@@ -1,10 +1,15 @@
 class V1::Users::Users < V1::Base
   include V1::Defaults
 
+  get "ping" do
+    "pong"
+  end
+
   resource :users do
 
     desc "Return list of users"
     get do
+      authenticated_user
       @users = User.all
       present @users, with: V1::Users::Entities
     end

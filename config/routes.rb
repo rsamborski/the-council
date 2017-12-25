@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  # devise_for :users
-  # User management
-
+  # Main page - placeholder
   root 'welcome#index'
+
+  # API with Grape
   mount API::Root => '/'
+
+  # User management with Devise
+  devise_for :users
 end

@@ -1,5 +1,5 @@
 # Use the barebones version of Ruby 2.2.3.
-FROM ruby:2.2.3-slim
+FROM ruby:2.2-slim
 
 # Optionally set a maintainer name to let people know who made this image.
 MAINTAINER Remigiusz Samborski <rsamborski@gmail.com>
@@ -35,7 +35,7 @@ RUN bundle install
 COPY . .
 
 # Provide dummy data to Rails so it can pre-compile assets.
-RUN bundle exec rake RAILS_ENV=production DATABASE_URL=postgresql://user:pass@127.0.0.1/dbname SECRET_TOKEN=pickasecuretoken assets:precompile
+#RUN bundle exec rake RAILS_ENV=production DATABASE_URL=postgresql://user:pass@127.0.0.1/dbname SECRET_TOKEN=pickasecuretoken assets:precompile
 
 # Expose a volume so that nginx will be able to read in assets in production.
 VOLUME ["$INSTALL_PATH/public"]
