@@ -27,8 +27,7 @@ docker-compose up
 In the first run the-council application will fail with errors due to lack of database. 
 Use CTRL+C to stop docker compose, afterwards run:
 ```bash
-docker-compose run the-council rake db:reset
-docker-compose run the-council rake db:migrate
+docker-compose run the-council rails db:reset
 docker-compose up
 ```
 

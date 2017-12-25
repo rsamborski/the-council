@@ -2,7 +2,7 @@ class V1::Users::Users < V1::Base
   include V1::Defaults
 
   get "ping" do
-    "pong"
+    {:response => "pong"}
   end
 
   resource :users do
@@ -12,6 +12,11 @@ class V1::Users::Users < V1::Base
       authenticated_user
       @users = User.all
       present @users, with: V1::Users::Entities
+    end
+
+    desc "Return current user information"
+    get "me" do
+      { :me => "Logged as #{current_user.email}" }
     end
 
     desc "Return a single user"
