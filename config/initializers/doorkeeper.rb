@@ -11,7 +11,7 @@ Doorkeeper.configure do
   # If you want to restrict access to the web interface for adding oauth authorized applications, you need to declare the block below.
   admin_authenticator do
     # Authenticate Admin with Devise
-    current_user.admin? || warden.authenticate!(:scope => :user).admin?
+    (current_user && current_user.admin?) || warden.authenticate!(:scope => :user).admin?
   end
 
   # Authorization Code expiration time (default 10 minutes).
