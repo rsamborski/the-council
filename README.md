@@ -1,3 +1,5 @@
+## !!! WARNING: THIS REPO IS NO LONGER MAINTAINED AND HAS BEEN ARCHIVED !!!
+
 # The Council / Jedi Council
 
 Main Scrum Wars application written in Ruby on Rails.
