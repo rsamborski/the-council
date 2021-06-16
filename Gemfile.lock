@@ -129,7 +129,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     pg (0.18.4)
-    rack (2.0.3)
+    rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-test (0.7.0)
